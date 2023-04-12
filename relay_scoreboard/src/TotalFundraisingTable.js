@@ -13,7 +13,11 @@ const TotalFundraisingTable = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((team) => (
+          {data.filter(function (row){
+            if (row.team === "")
+              return false;
+            return true;
+          }).map((team) => (
             <tr key={team.team}>
               <td>{team.team}</td>
               <td>{team.amount}</td>
