@@ -4,7 +4,7 @@ import './FundraisingTable.css';
 const NightFundraisingTable = ({ data }) => {
   return (
     <div className="fundraising-table">
-      <h2 className="table-title">Total Fundraising</h2>
+      <h2 className="table-title">Tonight's Fundraising</h2>
       <table>
         <thead>
           <tr>
@@ -14,9 +14,9 @@ const NightFundraisingTable = ({ data }) => {
         </thead>
         <tbody>
           {data.map((team) => (
-            <tr key={team.name}>
-              <td>{team.name}</td>
-              <td>{team.total}</td>
+            <tr key={team.team}>
+              <td>{team.team}</td>
+              <td>{team.amount}</td>
             </tr>
           ))}
         </tbody>
