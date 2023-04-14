@@ -1,10 +1,15 @@
 .row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cc99ff;
   }
 
   .event-title {
     font-size: 3rem;
-    color: purple;
+    color: #9900cc;
     margin: 3rem 0;
   }
   
