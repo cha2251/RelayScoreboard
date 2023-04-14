@@ -1,5 +1,5 @@
 .scoreboard-container {
-  background-color: white;
+  background-color: #f5f9fc;
   margin:0px;
   height:100vh;
 }
@@ -26,10 +26,6 @@
   margin-bottom: 50px;
 }
 
-.table {
-  
-}
-
 .table-title {
   font-size: 2rem;
   color: black;
@@ -37,6 +33,7 @@
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+  color: #660066;
 }
 
 .total-fundraising-table {

@@ -11,16 +11,20 @@ const Scoreboard = () => {
     const [nightOfFundraisingData, setNightOfFundraisingData] = useState([]);
     const SHEET_ID = creds.sheet_id;
     const API_KEY = creds.api_key;
+    const TOTAL_COL = 'D'
+    const NIGHT_COL = 'C'
 
 
-    async function getSheetData(tab_id) {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${tab_id}!A1:B10?key=${API_KEY}`;
+    async function getSheetData(tab_id, col_id) {
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${tab_id}!A1:${col_id}100?key=${API_KEY}`;
         const response = await fetch(url);
         const json = await response.json();
         const rows = json.values;
         const data = [];
         for (let i = 1; i < rows.length; i++) {
-          const [team, amount] = rows[i];
+          console.log(rows[i]);
+          const team = rows[i][0];
+          const amount = rows[i][rows[i].length - 1];
           data.push({ team, amount });
         }
         return data;
@@ -28,9 +32,9 @@ const Scoreboard = () => {
 
     useEffect(() => {
       const fetchData = async () => {
-        var data = await getSheetData('Highest Total');
+        var data = await getSheetData('Highest Total',TOTAL_COL);
         setTotalFundraisingData(data);
-        data = await getSheetData('Highest Relay Only');
+        data = await getSheetData('Highest Relay Only',NIGHT_COL);
         setNightOfFundraisingData(data);
       };
       fetchData();
