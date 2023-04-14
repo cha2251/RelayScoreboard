@@ -5,11 +5,11 @@ const TotalFundraisingTable = ({ data }) => {
   return (
     <div className="fundraising-table">
       <h2 className="table-title">Total Fundraising</h2>
-      <table>
+      <table className="fundraising-table-actual">
         <thead>
           <tr>
             <th>Team Name</th>
-            <th>Total Fundraising</th>
+            <th>Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@ const TotalFundraisingTable = ({ data }) => {
           }).map((team) => (
             <tr key={team.team}>
               <td>{team.team}</td>
-              <td>{team.amount}</td>
+              <td>${Math.floor(team.amount)}</td>
             </tr>
           ))}
         </tbody>

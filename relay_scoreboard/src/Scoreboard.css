@@ -7,22 +7,32 @@
 .event-title {
   font-size: 3rem;
   color: purple;
-  margin: 2rem 0;
+  margin: 3rem 0;
+}
+
+.event-icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 2rem;
 }
 
 .tables-container {
   display: flex;
   gap: 2rem;
+  white-space: nowrap;
 }
 
 .table-title {
   font-size: 2rem;
-  color: purple;
+  color: black;
   margin-bottom: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .total-fundraising-table {
-  width: 50%;
+  width: 45%;
 }
 
 .total-fundraising-table table {
@@ -44,4 +54,8 @@
 
 .total-fundraising-table tr:last-child td {
   border-bottom: none;
+}
+
+.row {
+  display: flex;
 }

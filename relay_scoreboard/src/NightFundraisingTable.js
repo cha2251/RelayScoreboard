@@ -9,7 +9,7 @@ const NightFundraisingTable = ({ data }) => {
         <thead>
           <tr>
             <th>Team Name</th>
-            <th>Fundraising Tonight</th>
+            <th>Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@ const NightFundraisingTable = ({ data }) => {
           }).map((team) => (
             <tr key={team.team}>
               <td>{team.team}</td>
-              <td>{team.amount}</td>
+              <td>${Math.floor(team.amount)}</td>
             </tr>
           ))}
         </tbody>

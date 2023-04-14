@@ -1,21 +1,36 @@
 .fundraising-table {
   width: 50%;
-  margin: 0 auto;
   border-collapse: collapse;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: 10px;
 }
 
-.th {
-  background-color: purple;
-  color: white;
+tr {
+  border: solid;
+  border-width: 1px 0;
+  color: lightgray;
+}
+
+th {
+  color: purple;
   font-weight: bold;
-  padding: 8px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  width: 50%;
+  text-align: left;
+  font-size: 1.3rem;
 }
 
-.td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+td {
+  color: purple;
+  width: 50%;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 1.1rem;
 }
 
 .tr:nth-child(even) {
@@ -24,4 +39,9 @@
 
 .tr:hover {
   background-color: #ddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
