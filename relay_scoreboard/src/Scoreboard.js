@@ -46,12 +46,8 @@ const Scoreboard = () => {
               <Header />
             </div>
             <div className="tables-container">
-              <div className = "table">
-                <TotalFundraisingTable data={totalFundraisingData} />
-              </div>
-              <div className = "table">
-                <NightOfFundraisingTable data={nightOfFundraisingData} />
-              </div>
+              <NightOfFundraisingTable data={nightOfFundraisingData} />
+              <TotalFundraisingTable data={totalFundraisingData} />
             </div>
         </div>
     );
