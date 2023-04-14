@@ -8,8 +8,8 @@ const Schedule = () => {
         <div className="header">
             <Header />
         </div>
-        <div className="schedule-image">
-            <img src={schedule} alt="Schedule" />
+        <div className="schedule-background">
+            <img src={schedule} alt="Schedule" className="image"/>
         </div>
     </div>
     );

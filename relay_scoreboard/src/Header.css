@@ -1,18 +1,27 @@
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     background-color: #f2ecf9;
   }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2ecf9;
+  }
+
+
   .event-title {
     font-size: 3rem;
     color: #660066;
     margin: 3rem 0;
+    text-align: center;
   }
-  
+
   .event-icon {
     width: 6rem;
     height: 6rem;
