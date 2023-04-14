@@ -4,12 +4,12 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #cc99ff;
+    background-color: white;
   }
 
   .event-title {
     font-size: 3rem;
-    color: #9900cc;
+    color: #660066;
     margin: 3rem 0;
   }
   
@@ -17,5 +17,19 @@
     width: 6rem;
     height: 6rem;
     margin: 2rem;
+  }
+  
+  .button {
+    background-color: #660066;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
   

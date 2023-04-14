@@ -12,9 +12,13 @@ const Header = () => {
             <img src={relay_logo}
                 alt="Relay for Life Logo" 
                 class="event-icon" />
-            <Link to="/">Fundraising</Link>
+            <button class="button" onClick={() => {
+                    window.location.href = "/";
+                }}> Fundraising </button>
             <h1 className="event-title">RIT Relay for Life</h1>
-            <Link to="/schedule">Schedule</Link>
+            <button class="button" onClick={() => {
+                    window.location.href = "/schedule";
+                }}> Schedule </button>
             <img src={acs_logo}
                 alt="Relay for Life Logo" 
                 class="event-icon" />
