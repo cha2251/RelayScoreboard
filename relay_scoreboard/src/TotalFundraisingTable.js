@@ -17,7 +17,8 @@ const TotalFundraisingTable = ({ data }) => {
             if (row.team === "")
               return false;
             return true;
-          }).map((team) => (
+          })
+          .map((team) => (
             <tr key={team.team}>
               <td>{team.team}</td>
               <td>${Math.floor(team.amount)}</td>
