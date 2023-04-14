@@ -3,6 +3,7 @@ import TotalFundraisingTable from './TotalFundraisingTable';
 import NightOfFundraisingTable from './NightFundraisingTable';
 import './Scoreboard.css';
 import creds from './creds.json'
+import Header from './Header';
 
 
 const Scoreboard = () => {
@@ -23,21 +24,13 @@ const Scoreboard = () => {
           data.push({ team, amount });
         }
         return data;
-        // const fakeData = [];
-        // for (let i = 1; i < 51; i++) {
-        //   const team = "Team " + i;
-        //   const amount = i * 100;
-        //   fakeData.push({ team, amount });
-        // }
-        // return fakeData;
 }
 
     useEffect(() => {
       const fetchData = async () => {
         var data = await getSheetData('Highest Total');
         setTotalFundraisingData(data);
-        console.log(data)
-        var data = await getSheetData('Highest Relay Only');
+        data = await getSheetData('Highest Relay Only');
         setNightOfFundraisingData(data);
       };
       fetchData();
@@ -45,11 +38,8 @@ const Scoreboard = () => {
 
     return (
         <div className="scoreboard-container">
-            <div class="row">
-              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/American_Cancer_Society_Relay_For_Life_Logo.png/220px-American_Cancer_Society_Relay_For_Life_Logo.png" 
-                alt="Relay for Life Logo" 
-                class="event-icon" />
-              <h1 className="event-title">RIT Relay for Life</h1>
+            <div className="header">
+              <Header />
             </div>
             <div className="tables-container">
                 <TotalFundraisingTable data={totalFundraisingData} />

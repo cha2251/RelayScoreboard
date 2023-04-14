@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+  }
+
+  .event-title {
+    font-size: 3rem;
+    color: purple;
+    margin: 3rem 0;
+  }
+  
+  .event-icon {
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem;
+  }
+  
