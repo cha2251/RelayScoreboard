@@ -12,6 +12,7 @@
 tr {
   border: solid;
   border-width: 1px 0;
+  border-bottom-width: 0;
   color: lightgray;
   display: flex;
   justify-content: space-evenly;
@@ -37,14 +38,6 @@ td {
   padding-left: 15px;
   font-size: 1.1rem;
   text-align: center;
-}
-
-.tr:nth-child(even) {
-  background-color: grey;
-}
-
-.tr:hover {
-  background-color: #ddd;
 }
 
 table {
