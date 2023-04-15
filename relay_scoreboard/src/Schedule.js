@@ -1,5 +1,5 @@
 import Header from "./Header";
-import schedule from "../assets/schedule.jpg";
+import schedule from "./assets/schedule.jpg";
 import "./Schedule.css";
 
 const Schedule = () => {

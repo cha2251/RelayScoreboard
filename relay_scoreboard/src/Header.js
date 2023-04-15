@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./Header.css";
-import relay_logo from "../assets/relay-logo.png";
-import acs_logo from "../assets/acs-logo.jpg";
+import relay_logo from "./assets/relay-logo.png";
+import acs_logo from "./assets/acs-logo.jpg";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
